@@ -1,0 +1,17 @@
+.hero__wrapper {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 537px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 502px;
+  }
+}
+
+.hero__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.19;
+  $header-color: #2c2c2c;
+  color: $header-color;
+}
