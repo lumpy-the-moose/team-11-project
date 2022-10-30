@@ -10,8 +10,6 @@
   }
 }
 .hero__container {
-  outline: 1px solid tomato;
-
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     position: relative;
     height: 409px;
@@ -19,7 +17,6 @@
 
   @media screen and (min-width: 1280px) {
     display: flex;
-    //gap: 138px;
     justify-content: space-between;
   }
 }
@@ -31,11 +28,11 @@
   }
   @media screen and (min-width: 1280px) {
     width: 502px;
+    padding-top: 159px;
   }
 }
 
 .hero__title {
-  margin-top: 159px;
   margin-bottom: 28px;
 
   font-size: 28px;
