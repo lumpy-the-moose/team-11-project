@@ -140,22 +140,21 @@
       }
     }
   }
+  &__button-image {
+    fill: currentColor;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    &__icon--tablet {
-      display: inherit;
-    }
-    &__icon--desktop {
-      display: none;
+    &__button-image {
+      width: 11px;
+      height: 20px;
     }
   }
 
   @media screen and (min-width: 1280px) {
-    &__icon--tablet {
-      display: none;
-    }
-    &__icon--desktop {
-      display: inherit;
+    &__button-image {
+      width: 16px;
+      height: 29px;
     }
   }
 }
