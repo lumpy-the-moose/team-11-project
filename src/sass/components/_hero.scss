@@ -1,0 +1,153 @@
+.hero__section {
+  background-color: $color-background;
+}
+.hero__container {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    position: relative;
+    height: 409px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    gap: 138px;
+  }
+}
+
+.hero__wrapper {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 537px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 502px;
+  }
+}
+
+.hero__title {
+  margin-top: 159px;
+  margin-bottom: 28px;
+
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.17;
+  color: $color-text;
+
+  @media screen and (min-width: 768px) {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 48px;
+    margin-bottom: 28px;
+  }
+}
+
+.hero__text {
+  margin-bottom: 28px;
+
+  font-size: 14px;
+  line-height: 1.5;
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 100%;
+  }
+}
+
+.slider {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    z-index: 99;
+
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 14px solid $color-modal;
+
+    &:active {
+      border-color: $color-button;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    position: relative;
+
+    width: 500px;
+    height: 500px;
+    border: 26px solid $color-modal;
+
+    &:hover,
+    &:focus {
+      border-color: $color-button;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: $color-background;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+
+    &:active {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    }
+
+    &--prev {
+      left: -25px;
+    }
+    &--next {
+      right: -25px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 48px;
+      height: 40px;
+
+      &:hover,
+      &:focus {
+        color: $color-button-border;
+      }
+
+      &--prev {
+        left: -40px;
+      }
+      &--next {
+        right: -40px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    &__icon--tablet {
+      display: inherit;
+    }
+    &__icon--desktop {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__icon--tablet {
+      display: none;
+    }
+    &__icon--desktop {
+      display: inherit;
+    }
+  }
+}
