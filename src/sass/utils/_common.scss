@@ -6,6 +6,8 @@ body {
   color: $color-text;
 
   font-family: 'Roboto', sans-serif;
+
+  min-width: 320px;
 }
 
 h1,
@@ -14,6 +16,11 @@ h3,
 ul,
 p {
   margin: 0;
+}
+
+button {
+  border: 0;
+  padding: 0;
 }
 
 ul {
@@ -36,6 +43,14 @@ picture {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.btn {
+  cursor: pointer;
+  @include font(13px, 500, 1.5);
+  border-radius: 30px;
+
+  color: $color-text;
 }
 
 .container {

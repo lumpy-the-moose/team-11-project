@@ -1,0 +1,61 @@
+@mixin flex-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin elment-centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin font($fs, $fw, $lh) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+@mixin mobile-min {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin table-min {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop-min {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin mobile-max {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin table-max {
+  @media screen and (max-width: 1279px) {
+    @content;
+  }
+}
+
+@mixin table-min-table-max {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
+}
