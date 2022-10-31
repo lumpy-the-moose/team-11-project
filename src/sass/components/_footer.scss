@@ -13,7 +13,7 @@
 
     @media screen and (min-width: $desktop) {
         min-height: 266px;
-        height: 100%;
+        height: auto;
         min-width: 1200px;
         width: 100%;
     }
@@ -58,7 +58,6 @@
     @media screen and (min-width: $desktop) {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 80px;
     }
 }
 
@@ -68,13 +67,24 @@
 
     @media screen and (min-width: $tablet) {
         justify-content: flex-start;
+        align-items: center;
         margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 0;
+        height: 52px;
     }
 }
 
 .logo {
     width: 69px;
     height: 51px;
+    
+    @media screen and (min-width: $desktop) {
+        width: 66px;
+        height: 52px;
+    }
 }
 
 .logo__icon {
@@ -87,6 +97,7 @@
 
     @media screen and (min-width: $tablet) {
         margin-bottom: 0;
+        margin-left: 114px;
     }
 
     @media screen and (min-width: $desktop) {
@@ -159,6 +170,11 @@
 
     @media screen and (min-width: $tablet) {
         margin-left: 12px;
+
+    &:hover,
+    &:focus {
+        background-color: $color-modal;
+    }
     }
 }
 
@@ -182,6 +198,10 @@
 
 .policies {
     margin-bottom: 40px;
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 100px;
+    }
 }
 
 .policy-link {
