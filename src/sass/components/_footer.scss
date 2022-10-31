@@ -180,10 +180,13 @@
 
 .form-policy {
     @include font (10px, 400, 1.2);
+
     margin-top: 20px;
     margin-bottom: 60px;
 
     @media screen and (min-width: $tablet) {
+        @include font (12px, 400, 1.16);
+
         margin-top: 12px;
         margin-bottom: 100px;
     }
@@ -239,6 +242,10 @@
             margin-right: 20px;
         }
     } 
+
+    @media screen and (min-width: $tablet) {
+        @include font (12px, 400, 1.16);
+    }
 }
 
 .policies__list-link {
@@ -258,4 +265,8 @@
 .footer-end {
     @include font (10px, 400, 1.2);
     text-align: center;
+
+    @media screen and (min-width: $tablet) {
+        @include font (12px, 400, 1.16);
+    }
 }
