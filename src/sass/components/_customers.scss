@@ -1,19 +1,27 @@
+.customer-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/customers/rectanglemob1x.png);
+  @media (min-resolution: 2dppx) {
+    background-image: url(../images/customers/rectanglemob2x.png);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/customers/rectangletab1x.png);
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/customers/rectangletab2x.png);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/customers/rectangledesk1x.png);
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/customers/rectangledesk2x.png);
+    }
+  }
+}
+
 .customers {
-  //     &__container{
-  //         // width: 320px;
-  //         // height: 769px;
-  //         background-repeat: no-repeat;
-  //   background-size: cover;
-  //   background-position: center;
-  //   background-image: url(/src/images/customers/Rectanglemob1x.png);
-  //   @media screen and (min-width: 1280px) {
-  //        background-image: url(/src/images/customers/Rectangledesk1x.png);
-  //     //   width: 1280px;
-  //     //   height: 647px;
-
-  //     }
-
-  //     }
+ 
   &__title {
     margin-bottom: 20px;
 
@@ -51,16 +59,16 @@
       margin-bottom: 24px;
       padding: 28px 8px 40px 8px;
 
-      // background: #FEFEFE;
+      background: #FEFEFE;
       border-radius: 0px 30px 30px 30px;
-      background-color: #7eb101;
+     
     }
     @media screen and (min-width: 768px) {
       margin-right: 32px;
       padding: 28px 12px 40px 12px;
-      // background: #FEFEFE;
+      background: #FEFEFE;
       border-radius: 0px 30px 30px 30px;
-      background-color: #7eb101;
+     
       &:last-child {
         margin-right: 0;
       }
@@ -70,9 +78,9 @@
     @media screen and (min-width: 1280px) {
       margin-right: 139px;
       padding: 28px 14px 40px 14px;
-      // background: #FEFEFE;
+      background: #FEFEFE;
       border-radius: 0px 30px 30px 30px;
-      background-color: #7eb101;
+     
       &:last-child {
         margin-right: 0;
       }
@@ -136,7 +144,12 @@
       margin-right: 0;
     }
   }
+  &__star{
+    fill: #FFE550;
+  }
 }
+
+
 
 // @media screen and (min-width: 480px) {
 //     width: 480px;
