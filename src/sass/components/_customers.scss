@@ -3,25 +3,35 @@
   background-size: cover;
   background-position: center;
   background-image: url(../images/customers/rectanglemob1x.png);
-  @media (min-resolution: 2dppx) {
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: url(../images/customers/rectanglemob2x.png);
   }
+
   @media screen and (min-width: 768px) {
     background-image: url(../images/customers/rectangletab1x.png);
-    @media (min-resolution: 2dppx) {
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url(../images/customers/rectangletab2x.png);
     }
   }
+
   @media screen and (min-width: 1280px) {
     background-image: url(../images/customers/rectangledesk1x.png);
-    @media (min-resolution: 2dppx) {
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url(../images/customers/rectangledesk2x.png);
     }
   }
 }
 
 .customers {
- 
   &__title {
     margin-bottom: 20px;
 
@@ -57,18 +67,17 @@
     position: relative;
     @media screen and (max-width: 767px) {
       margin-bottom: 24px;
-      padding: 28px 8px 40px 8px;
+      padding: 28px 8px 8px 8px;
 
-      background: #FEFEFE;
+      background: $color-background;
       border-radius: 0px 30px 30px 30px;
-     
     }
     @media screen and (min-width: 768px) {
       margin-right: 32px;
-      padding: 28px 12px 40px 12px;
-      background: #FEFEFE;
+      padding: 28px 12px 8px 12px;
+      background: $color-background;
       border-radius: 0px 30px 30px 30px;
-     
+
       &:last-child {
         margin-right: 0;
       }
@@ -77,10 +86,10 @@
     }
     @media screen and (min-width: 1280px) {
       margin-right: 139px;
-      padding: 28px 14px 40px 14px;
-      background: #FEFEFE;
+      padding: 28px 14px 8px 14px;
+      background: $color-background;
       border-radius: 0px 30px 30px 30px;
-     
+
       &:last-child {
         margin-right: 0;
       }
@@ -108,9 +117,20 @@
   }
 }
 .customers-wrap {
+  display: flex;
+  align-items: center;
   max-width: 160px;
   height: 52px;
-  border-right: 0.854167px solid #7eb101;
+  border-right: 0.854167px solid $color-button-border;
+ 
+  &__img {
+    margin-right: 16px;
+  }
+ 
+  &__conteiner {
+    display: block;
+    padding: 6px 18px 6px 16px;
+  }
 
   &__title {
     margin-bottom: 2px;
@@ -118,16 +138,12 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 150%;
-
-    color: #2c2c2c;
   }
 
   &__text {
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
-
-    color: #2c2c2c;
   }
 }
 
@@ -138,27 +154,17 @@
     left: 14px;
     top: 14px;
   }
+
   &__item {
     margin-right: 4px;
     &:last-child {
       margin-right: 0;
     }
   }
-  &__star{
-    fill: #FFE550;
+  
+  &__star {
+    fill: $color-modal;
   }
 }
 
 
-
-// @media screen and (min-width: 480px) {
-//     width: 480px;
-//   }
-//   @media screen and (min-width: 768px) {
-//     width: 768px;
-//     padding: 0 32px;
-//   }
-//   @media screen and (min-width: 1280px) {
-//     width: 1280px;
-//     padding: 0 16px;
-//   }
