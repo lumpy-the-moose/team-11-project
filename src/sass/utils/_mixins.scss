@@ -4,7 +4,7 @@
   justify-content: center;
 }
 
-@mixin elment-centered {
+@mixin element-centered {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -22,7 +22,7 @@
   }
 }
 
-@mixin table-min {
+@mixin tablet-min {
   @media screen and (min-width: 768px) {
     @content;
   }
@@ -40,14 +40,14 @@
   }
 }
 
-@mixin table-max {
+@mixin tablet-max {
   @media screen and (max-width: 1279px) {
     @content;
   }
 }
 
-@mixin table-min-table-max {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+@mixin tablet-min-tablet-max {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     @content;
   }
 }
