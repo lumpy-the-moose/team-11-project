@@ -10,14 +10,17 @@
   }
 }
 .hero__container {
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  outline: 1px solid red;
+  @media screen and (min-width: 768px) {
     position: relative;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     height: 409px;
   }
 
   @media screen and (min-width: 1280px) {
-    display: flex;
-    justify-content: space-between;
+    height: 608px;
   }
 }
 
@@ -76,7 +79,7 @@
     bottom: 0;
     width: 320px;
     height: 320px;
-    border-radius: 50%;
+    border-radius: 269px;
     border: 14px solid $color-modal;
 
     &:active {
@@ -84,11 +87,12 @@
     }
   }
   @media screen and (min-width: 1280px) {
-    position: sticky;
-
-    width: 500px;
-    height: 500px;
+    width: 580px;
+    height: 580px;
     border: 26px solid $color-modal;
+
+    top: 14px;
+    right: 14px;
 
     &:hover,
     &:focus {
@@ -127,11 +131,10 @@
       width: 48px;
       height: 40px;
 
-      &:hover,
-      &:focus {
-        color: $color-button-border;
+      &:hover &-image,
+      &:focus &-image {
+        fill: $color-button-border;
       }
-
       &--prev {
         left: -40px;
       }
@@ -139,9 +142,9 @@
         right: -40px;
       }
     }
-  }
-  &__button-image {
-    fill: currentColor;
+    &:active &-image {
+      fill: $color-text;
+    }
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
