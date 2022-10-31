@@ -34,6 +34,7 @@
 
     @media screen and (min-width: $tablet) {
         padding-top: 100px;
+        padding-bottom: 100px;
         background-image: url(../images/tablet/footer-background-tab.png);
 
         @include retina {
@@ -58,6 +59,7 @@
     @media screen and (min-width: $desktop) {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 80px;
     }
 }
 
@@ -190,6 +192,10 @@
         margin-top: 12px;
         margin-bottom: 100px;
     }
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 0;
+    }
 }
 
 .policies-footer-end {
@@ -197,13 +203,17 @@
         display: flex;
         justify-content: space-between;
     }
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 100px;
+    }
 }
 
 .policies {
     margin-bottom: 40px;
 
-    @media screen and (min-width: $desktop) {
-        margin-bottom: 100px;
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 0;
     }
 }
 
