@@ -1,0 +1,132 @@
+.customers{
+    &__title{
+     margin-bottom: 20px;
+
+     font-weight: 700;
+     font-size: 28px;
+     line-height: 1.2;
+    
+
+        @media screen and (min-width: 768px) {
+         font-size: 42px;
+          line-height: 1.2;
+        }
+
+    }
+
+    &__text{
+     margin-bottom: 32px;
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 1.1;
+   
+
+     @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 1.2;
+      }
+
+    }
+
+    &__list{ 
+
+
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+       
+    }
+
+    &__item{
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 24px;
+            padding: 28px 8px 40px 8px;
+            
+            // background: #FEFEFE;
+border-radius: 0px 30px 30px 30px;
+            background-color: #7EB101;
+        }
+        @media screen and (min-width: 768px) {
+            margin-right: 32px;
+            padding: 28px 12px 40px 12px;
+            // background: #FEFEFE;
+border-radius: 0px 30px 30px 30px;
+            background-color: #7EB101;
+            &:last-child{
+                margin-right: 0;
+            }
+            max-width: 336px;
+            height: 244px;
+        }
+        @media screen and (min-width: 1280px) {
+            margin-right: 139px;
+            padding: 28px 14px 40px 14px;
+            // background: #FEFEFE;
+border-radius: 0px 30px 30px 30px;
+            background-color: #7EB101;
+            &:last-child{
+                margin-right: 0;
+            }
+            max-width: 501px;
+            height: 227px;
+            
+        }
+      
+    }
+
+}
+
+.customers__item-text{
+    margin-bottom: 40px;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.2;
+
+
+@media screen and (min-width: 768px) {
+   
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+
+
+}
+.customers-wrap{
+    max-width: 160px;
+    height: 52px;
+    border-right: 0.854167px solid #7EB101;
+ 
+
+    &__title{
+        margin-bottom: 2px;
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+
+        color: #2C2C2C;
+    }
+
+    &__text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+       
+        color: #2C2C2C;
+    }
+
+}
+// @media screen and (min-width: 480px) {
+//     width: 480px;
+//   }
+//   @media screen and (min-width: 768px) {
+//     width: 768px;
+//     padding: 0 32px;
+//   }
+//   @media screen and (min-width: 1280px) {
+//     width: 1280px;
+//     padding: 0 16px;
+//   }
