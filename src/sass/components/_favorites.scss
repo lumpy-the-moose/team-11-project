@@ -87,6 +87,13 @@ row-gap: 32px;
         border-radius: 197.5px;
     }
       
+}
+
+.favorite_li_s{
+
+    @media screen and (max-width: 768px){
+    display: none;
+}
 
 }
 
