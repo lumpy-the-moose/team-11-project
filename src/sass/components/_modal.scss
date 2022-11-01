@@ -1,0 +1,160 @@
+.backdrop {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 60px 0 282px;
+
+  background-color: $color-backdrop;
+
+  &.is-hidden .modal {
+    @include table-min {
+      transform: scale(1.2) translate(-50%, -50%);
+    }
+  }
+}
+
+.modal {
+  position: relative;
+  padding: 32px 20px;
+  left: 50%;
+
+  max-width: 320px;
+  height: 449px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 30px;
+
+  background-color: $color-modal;
+
+  @include table-min {
+    top: 50%;
+    max-width: 458px;
+    padding: 32px;
+  }
+
+  &--moving {
+    transform: translateX(-50%);
+
+    @include table-min {
+      transform: scale(1) translate(-50%, -50%);
+      transition: transform 250ms linear;
+    }
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+// Button
+
+.button-modal {
+  position: absolute;
+  @include flex-centered;
+  cursor: pointer;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+
+  background-color: $color-white;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.06));
+
+  @include table-min {
+    top: 12px;
+    right: 12px;
+  }
+
+  &__svg {
+    fill: $color-text;
+  }
+}
+
+// Forma
+
+.form-modal {
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    @include font(24px, 700, 1.2);
+    color: $color-text;
+    &--moving {
+      @include flex-centered;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__conteiner {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+    &:last-of-type {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__label {
+    @include font(16px, 500, 1.4);
+
+    color: $color-text;
+
+    &--moving {
+      margin-bottom: 2px;
+      margin-left: 12px;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    height: 48px;
+    padding-left: 12px;
+    border-radius: 30px;
+    outline: none;
+
+    border: 1px solid $color-input-border;
+    background-color: $color-white;
+
+    &:focus {
+      border: 1px solid $color-button-border;
+    }
+
+    &::placeholder {
+      @include font(16px, 400, 1.3);
+      color: $color-placeholder;
+    }
+  }
+}
+
+// Button
+
+.primery-btn {
+  @extend %btn;
+  padding: 10px 38px;
+
+  background-color: $color-white;
+  border: 2px solid $color-button-border;
+
+  &--centered {
+    @include elment-centered;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $color-button;
+  }
+}
