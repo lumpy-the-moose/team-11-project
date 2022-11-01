@@ -10,7 +10,7 @@
   background-color: $color-backdrop;
 
   &.is-hidden .modal {
-    @include table-min {
+    @include tablet-min {
       transform: scale(1.2) translate(-50%, -50%);
     }
   }
@@ -29,7 +29,7 @@
 
   background-color: $color-modal;
 
-  @include table-min {
+  @include tablet-min {
     top: 50%;
     max-width: 458px;
     padding: 32px;
@@ -38,7 +38,7 @@
   &--moving {
     transform: translateX(-50%);
 
-    @include table-min {
+    @include tablet-min {
       transform: scale(1) translate(-50%, -50%);
       transition: transform 250ms linear;
     }
@@ -70,7 +70,7 @@
   background-color: $color-white;
   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.06));
 
-  @include table-min {
+  @include tablet-min {
     top: 12px;
     right: 12px;
   }
@@ -149,7 +149,7 @@
   border: 2px solid $color-button-border;
 
   &--centered {
-    @include elment-centered;
+    @include element-centered;
   }
 
   &:hover,
