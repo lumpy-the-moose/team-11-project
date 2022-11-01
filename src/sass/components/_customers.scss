@@ -10,6 +10,12 @@
     background-image: url(../images/customers/rectanglemob2x.png);
   }
 
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: url(../images/customers/rectanglemob3x.png);
+  }
+
   @media screen and (min-width: 768px) {
     background-image: url(../images/customers/rectangletab1x.png);
 
@@ -17,6 +23,12 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/customers/rectangletab2x.png);
+    }
+
+    @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../images/customers/rectangletab3x.png);
     }
   }
 
@@ -27,6 +39,12 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/customers/rectangledesk2x.png);
+    }
+
+    @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../images/customers/rectangledesk3x.png);
     }
   }
 }
@@ -122,11 +140,11 @@
   max-width: 160px;
   height: 52px;
   border-right: 0.854167px solid $color-button-border;
- 
+
   &__img {
     margin-right: 16px;
   }
- 
+
   &__conteiner {
     display: block;
     padding: 6px 18px 6px 16px;
@@ -161,10 +179,8 @@
       margin-right: 0;
     }
   }
-  
+
   &__star {
     fill: $color-modal;
   }
 }
-
-
