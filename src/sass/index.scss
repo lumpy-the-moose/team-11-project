@@ -1,6 +1,13 @@
+// Components
 @import './utils/colors';
 @import './utils/animations';
 @import './utils/mixins';
+@import './utils/breakpoints';
 @import './utils/common';
+@import './utils/placeholders';
 @import './components/hero';
 @import './components/offerings';
+@import './components/favorites';
+@import './components/customers';
+@import './components/footer';
+@import './components/modal';

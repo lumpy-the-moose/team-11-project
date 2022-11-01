@@ -1,0 +1,7 @@
+%btn {
+  cursor: pointer;
+  @include font(13px, 500, 1.5);
+  border-radius: 30px;
+
+  color: $color-text;
+}
