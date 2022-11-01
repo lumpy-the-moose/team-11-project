@@ -4,7 +4,7 @@
         font-size: 28px;
         line-height: 33px;
         text-align: center;
-        color: #2C2C2C;
+        color: $color-text;
         }
 
 
@@ -22,7 +22,7 @@
         font-size: 14px;
         line-height: 16px;
         text-align: center;
-        color: #2C2C2C;
+        color: $color-text;
     }
 
 font-family: 'Roboto';
@@ -47,19 +47,19 @@ row-gap: 32px;
     align-items: center;
     width: 280px;
     height: 282px;
-    border: 11px solid #FFE550;
+    border: 11px solid $color-modal;
     border-radius: 139.658px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 768px){
-        border: 14px solid #FFE550;
+        border: 14px solid $color-modal;
          border-radius: 167.59px;
          width: 336px;
          height: 338px;
     }
  
     @media screen and (min-width: 1280px){
-        border: 16px solid #FFE550;
+        border: 16px solid $color-modal;
         border-radius: 197px;
         width: 394px;
         height: 397px;
@@ -73,18 +73,18 @@ row-gap: 32px;
 .favorite_li:focus{
 
 
-    border: 11px solid #BBF330;
+    border: 11px solid $color-button-hover;
     border-radius: 139.658px;
 
     @media screen and (min-width: 768px){
-        border: 14px solid #BBF330;
+        border: 14px solid $color-button-hover;
         border-radius: 167.59px;
     }
 
     
     @media screen and (min-width: 1280px){
     
-        border: 16px solid #BBF330;
+        border: 16px solid $color-button-hover;
         border-radius: 197.5px;
     }
       
