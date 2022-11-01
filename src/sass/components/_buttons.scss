@@ -1,0 +1,118 @@
+// Основний класс: .button
+// Модифікатори:
+//   .button-order - для кнопки "Order now"
+//   .button-order--big  - збільшена кнопка "Order now"
+//   .button-order--white, button-order--green - модіфікатори кольору
+//   Використання
+//   <button class="button button-order(або button-order--big) button-order--white(або --green)">
+
+//   .button-subscribe - для кнопки "Subscribe"
+//   .button-subscribe--white,.button-subscribe--green
+//   Використання
+//   <button class="button button-subscribe button-subscribe--white(або --green)">
+
+//   .button-send - для кнопки "Send" в модалці
+//   .button-send--white
+
+//   Використання
+//   <button class="button button-send button-send--white">
+
+//   TODO Зробати для кнопки send вигляд з помилковими інпутами.
+
+.button {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 30px;
+
+  cursor: pointer;
+
+  &-order {
+    width: 98px;
+    height: 32px;
+  }
+
+  &-order--big,
+  &-send {
+    width: 106px;
+    height: 40px;
+  }
+
+  &-order--green {
+    background-color: $color-button;
+    border: none;
+    &:active {
+      background-color: $color-button-hover;
+    }
+    @include desktop-min {
+      &:hover,
+      &:focus {
+        background-color: $color-button-hover;
+      }
+    }
+  }
+
+  &-order--white {
+    background-color: $color-white;
+    border: 2px solid $color-button-border;
+    &:active {
+      border-color: $color-button-border-hover;
+    }
+    @include desktop-min {
+      &:hover,
+      &:focus {
+        border-color: $color-button-border-hover;
+      }
+    }
+  }
+
+  &-subscribe {
+    width: 103px;
+    height: 42px;
+    &--green {
+      background-color: $color-button;
+      border: none;
+      &:active {
+        background-color: $color-button-hover;
+      }
+      @include desktop-min {
+        &:hover,
+        &:focus {
+          background-color: $color-button-hover;
+        }
+      }
+    }
+    &--white {
+      background-color: $color-white;
+      border: 0.854167px solid $color-button-border;
+      &:active {
+        border-color: $color-button-border-hover;
+      }
+      @include desktop-min {
+        &:hover,
+        &:focus {
+          background-color: $color-modal;
+        }
+      }
+    }
+  }
+
+  &-send--white {
+    background-color: $color-white;
+    border: 2px solid $color-button-border;
+    &:active {
+      background-color: $color-button;
+    }
+    @include desktop-min {
+      &:hover,
+      &:focus {
+        background-color: $color-button;
+      }
+    }
+  }
+}
