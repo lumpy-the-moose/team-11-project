@@ -1,0 +1,88 @@
+<section class="section section-offering">
+  <div class="container offering-container">
+    <picture>
+      <source
+        srcset="
+          ./images/desktop-offering/apple-1x.png 1x,
+          ./images/desktop-offering/apple-2x.png 2x
+        "
+        media="(min-width: 1280px)"
+      />
+
+      <source
+        srcset="
+          ./images/tablet-offering/apple1x.png 1x,
+          ./images/tablet-offering/apple2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+
+      <source
+        srcset="
+          ./images/mobile-offering/apple1x.png 1x,
+          ./images/mobile-offering/apple2x.png 2x
+        "
+        media="(min-width: 480px)"
+      />
+
+      <img
+        src="./images/mobile-offering/apple1x.png"
+        alt="Green apple"
+        class="offering-img"
+      />
+
+      <img
+        src="./images/tablet-offering/apple1x.png"
+        alt="Green apples"
+        class="offering-img__tablet"
+      />
+    </picture>
+    <div>
+      <h2 class="offering-title">What’s Special About Our Offerings</h2>
+      <p class="offering-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+      </p>
+      <div class="advantages-container">
+        <div class="advantages-container__delivery">
+          <svg class="offering-icon" width="48" height="48">
+            <use href="./images/icons.svg#icon-rocket"></use>
+          </svg>
+
+          <h3 class="advantages-title">Fasest Delivery</h3>
+          <p class="advantages-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </div>
+        <div class="advantages-container__order">
+          <svg class="offering-icon" width="48" height="48">
+            <use href="./images/icons.svg#icon-touch"></use>
+          </svg>
+
+          <h3 class="advantages-title">Easy to order</h3>
+          <p class="advantages-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </div>
+      </div>
+
+      <ul class="offering__button">
+        <li><button type="button">Order Now</button></li>
+        <li>
+          <button type="button" class="information-button">
+            Read More
+            <svg width="9" height="9">
+              <use
+                href="./images/icons.svg#icon-next"
+                class="information-button__icon"
+              ></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
