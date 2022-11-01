@@ -139,6 +139,8 @@
     border: 0.854167px solid $color-modal;
     border-radius: 30px;
 
+    outline: none;
+
     @media screen and (min-width: $tablet) {
         width: 259px;
         height: 42px;

@@ -1,13 +1,18 @@
-let input = document.querySelector('.subscribe__mail-input');
+let input = [
+  document.querySelector('.subscribe__mail-input'),
+  document.querySelector('.footer-form__input'),
+];
 
-input.addEventListener('input', event => {
-  if (!input.value) {
-    input.style.borderColor = '#FFE550';
-  }
-  if (input.value) {
-    input.style.borderColor = '#FF705D';
-  }
-  if (/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/.test(input.value)) {
-    input.style.borderColor = '#7EB101';
-  }
+input.forEach(elem => {
+  elem.addEventListener('input', inputHandler => {
+    if (!elem.value) {
+      elem.style.borderColor = '#FFE550';
+    }
+    if (elem.value) {
+      elem.style.borderColor = '#FF705D';
+    }
+    if (/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/.test(elem.value)) {
+      elem.style.borderColor = '#7EB101';
+    }
+  });
 });
