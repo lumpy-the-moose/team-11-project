@@ -1,0 +1,64 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal modal--moving">
+    <button type="button" class="button-modal" data-modal-close>
+      <svg width="11" height="11" class="button-modal__svg">
+        <use xlink:href="./images/icons.svg#icon-cross"></use>
+      </svg>
+    </button>
+
+    <form class="form-modal">
+      <b class="form-modal__title form-modal__title--moving">Order Form</b>
+
+      <div class="form-modal__conteiner">
+        <label for="name" class="form-modal__label form-modal__label--moving"
+          >Name</label
+        >
+        <input
+          type="text"
+          name="user name"
+          id="name"
+          placeholder="Your name"
+          required
+          minlength="3"
+          maxlength="25"
+          title="The name must be between 3 and 25 characters"
+          class="form-modal__input"
+        />
+      </div>
+
+      <div class="form-modal__conteiner">
+        <label for="tel" class="form-modal__label form-modal__label--moving"
+          >Phone number</label
+        >
+        <input
+          type="tel"
+          name="phone_number"
+          id="tel"
+          placeholder="+38(0_ _) _ _ _   _ _   _ _"
+          required
+          title="This phone must be in the format  099 000 00 00"
+          class="form-modal__input"
+        />
+      </div>
+
+      <div class="form-modal__conteiner">
+        <label for="mail" class="form-modal__label form-modal__label--moving"
+          >E-mail</label
+        >
+        <input
+          type="email"
+          name="email"
+          id="mail"
+          placeholder="example@gmail.com"
+          required
+          title="Please enter a valid email address"
+          class="form-modal__input"
+        />
+      </div>
+
+      <button type="submit" class="primery-btn primery-btn--centered">
+        Send
+      </button>
+    </form>
+  </div>
+</div>
