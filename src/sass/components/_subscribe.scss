@@ -1,6 +1,14 @@
 .subscribe {
   padding-bottom: 60px;
 
+  &__picture {
+    @media screen and (min-width: 1280px) {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
   &__img-banana {
     margin-bottom: 17px;
     margin-left: auto;
@@ -10,14 +18,16 @@
       margin-left: auto;
       margin-right: 0;
     }
-
-    @media screen and (min-width: 1280px) {
-    }
   }
 
   &__form-box {
     @media screen and (min-width: 768px) {
       display: flex;
+    }
+  }
+  &__box {
+    @media screen and (min-width: 1280px) {
+      position: relative;
     }
   }
 
