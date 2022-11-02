@@ -1,0 +1,1 @@
+{"mappings":"AAAA,IAAIA,OAAQ","sources":["src/js/slider/script.slider.js"],"sourcesContent":["new Swiper ('.image-slider');"],"names":["Swiper"],"version":3,"file":"index.740dffd1.js.map"}
