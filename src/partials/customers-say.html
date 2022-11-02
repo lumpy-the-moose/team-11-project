@@ -1,5 +1,5 @@
-<section class="section">
-  <div class="container customer__container">
+<section class="section customer-section">
+  <div class="container">
     <h2 class="customers__title">What our Customers Say</h2>
     <p class="customers__text">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -8,66 +8,99 @@
       <li class="customers__item">
         <ul class="customer-svg__list">
           <li class="customer-svg__item">
-            <svg width="17" height="16">
-              <use href="../src/images/icons.svg#icon-Vector"></use>
+            <svg class="customer-svg__star" width="17" height="16">
+              <use href="../src/images/icons.svg#icon-star"></use>
             </svg>
           </li>
           <li class="customer-svg__item">
-            <svg width="17" height="16">
-              <use href="../src/images/icons.svg#icon-Vector"></use>
+            <svg class="customer-svg__star" width="17" height="16">
+              <use href="../src/images/icons.svg#icon-star"></use>
             </svg>
           </li>
           <li class="customer-svg__item">
-            <svg width="17" height="16">
-              <use href="../src/images/icons.svg#icon-Vector"></use>
+            <svg class="customer-svg__star" width="17" height="16">
+              <use href="../src/images/icons.svg#icon-star"></use>
             </svg>
           </li>
           <li class="customer-svg__item">
-            <svg width="17" height="16">
-              <use href="../src/images/icons.svg#icon-Vector"></use>
+            <svg class="customer-svg__star" width="17" height="16">
+              <use href="../src/images/icons.svg#icon-star"></use>
             </svg>
           </li>
           <li class="customer-svg__item">
-            <svg width="17" height="16">
-              <use href="../src/images/icons.svg#icon-Vector"></use>
+            <svg class="customer-svg__star" width="17" height="16">
+              <use href="../src/images/icons.svg#icon-star"></use>
             </svg>
           </li>
         </ul>
-
         <p class="customers__item-text">
           “The Best app I have used to order food in a while, so many options to
           choose from too, I would recommend to a freind, No questions asked”
         </p>
         <div class="customers-wrap">
-          <h3 class="customers-wrap__title">Sumith Shah</h3>
-          <p class="customers-wrap__text">Some Dude</p>
+          <picture>
+            <source
+              srcset="
+                ./images/customers/mandesk1x.png 1x,
+                ./images/customers/mandesk2x.png 2x,
+                ./images/customers/mandesk3x.png 3x
+              "
+              media="(min-width:1200px)"
+            />
+            <source
+              srcset="
+                ./images/customers/mantab1x.png 1x,
+                ./images/customers/mantab2x.png 2x,
+                ./images/customers/mantab3x.png 3x
+              "
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="
+                ./images/customers/manmob1x.png 1x,
+                ./images/customers/manmob2x.png 2x,
+                ./images/customers/manmob3x.png 3x
+              "
+              media="(max-width:767px)"
+            />
+            <img
+              class="customers-wrap__img"
+              src="./images/customers/manmob1x.png"
+              alt="man"
+              type="image/png"
+            />
+          </picture>
+          <div class="customer-wrap__conteiner">
+            <h3 class="customers-wrap__title">Sumith Shah</h3>
+            <p class="customers-wrap__text">Some Dude</p>
+          </div>
         </div>
       </li>
       <li class="customers__item">
         <ul class="customer-svg__list">
           <li class="customer-svg__item">
-            <svg width="17" height="16">
-              <use href="../src/images/icons.svg#icon-Vector"></use>
+            <svg class="customer-svg__star" width="17" height="16">
+              <use href="../src/images/icons.svg#icon-star"></use>
             </svg>
           </li>
           <li class="customer-svg__item">
-            <svg width="17" height="16">
-              <use href="../src/images/icons.svg#icon-Vector"></use>
+            <svg class="customer-svg__star" width="17" height="16">
+              <use href="../src/images/icons.svg#icon-star"></use>
             </svg>
           </li>
           <li class="customer-svg__item">
-            <svg width="17" height="16">
-              <use href="../src/images/icons.svg#icon-Vector"></use>
+            <svg class="customer-svg__star" width="17" height="16">
+              <use href="../src/images/icons.svg#icon-star"></use>
             </svg>
           </li>
           <li class="customer-svg__item">
-            <svg width="17" height="16">
-              <use href="../src/images/icons.svg#icon-Vector"></use>
+            <svg class="customer-svg__star" width="17" height="16">
+              <use href="../src/images/icons.svg#icon-star"></use>
             </svg>
           </li>
           <li class="customer-svg__item">
-            <svg width="17" height="16">
-              <use href="../src/images/icons.svg#icon-Vector"></use>
+            <svg class="customer-svg__star" width="17" height="16">
+              <use href="../src/images/icons.svg#icon-star"></use>
             </svg>
           </li>
         </ul>
@@ -77,8 +110,44 @@
           app”
         </p>
         <div class="customers-wrap">
-          <h3 class="customers-wrap__title">Sumith Shah</h3>
-          <p class="customers-wrap__text">Some Dude</p>
+          <picture>
+            <source
+              srcset="
+                ./images/customers/womandesk1x.png 1x,
+                ./images/customers/womandesk2x.png 2x,
+                ./images/customers/womandesk3x.png 3x
+              "
+              media="(min-width:1200px)"
+            />
+            <source
+              srcset="
+                ./images/customers/womantab1x.png 1x,
+                ./images/customers/womantab2x.png 2x,
+                ./images/customers/womantab3x.png 3x
+              "
+              media="(min-width:768px)"
+            />
+
+            <source
+              srcset="
+                ./images/customers/womanmob1x.png 1x,
+                ./images/customers/womanmob2x.png 2x,
+                ./images/customers/womanmob3x.png 3x
+              "
+              media="(max-width:767px)"
+            />
+            <img
+              class="customers-wrap__img"
+              src="./images/customers/womanmob1x.png"
+              alt="woman"
+              type="image/jpeg"
+            />
+          </picture>
+
+          <div class="customer-wrap__conteiner">
+            <h3 class="customers-wrap__title">Sumith Shah</h3>
+            <p class="customers-wrap__text">Some Dude</p>
+          </div>
         </div>
       </li>
     </ul>
