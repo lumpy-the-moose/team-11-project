@@ -1,0 +1,117 @@
+.subscribe {
+  padding-bottom: 60px;
+
+  &__wrap {
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+      padding-bottom: 0px;
+      padding-bottom: 24px;
+    }
+  }
+  &__box {
+    @media screen and (min-width: 1280px) {
+      position: relative;
+    }
+  }
+
+  &__picture {
+    @media screen and (min-width: 768px) {
+      margin-right: 0;
+      margin-left: auto;
+    }
+
+    @media screen and (min-width: 1280px) {
+      position: absolute;
+      top: -46;
+      right: 0;
+    }
+  }
+
+  &__img-banana {
+    margin-bottom: 17px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+      margin-left: auto;
+      margin-right: 0;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__tittle {
+    @include font(28px, 700, 120%);
+
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 42px;
+    }
+  }
+
+  &__text {
+    @include font(14px, 400, 1.14);
+
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 150%;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 656px;
+    }
+  }
+
+  &__form-box {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  &__mail-input {
+    width: 100%;
+    font-size: 12px;
+    line-height: 150%;
+
+    padding: 12px 12px;
+    margin-bottom: 20px;
+
+    color: #505050;
+    background: $color-background;
+
+    border: 0.85px solid #ffe550;
+    border-radius: 30px;
+
+    outline: none;
+
+    @media screen and (min-width: 768px) {
+      width: 395px;
+    }
+  }
+
+  &__mail-button {
+    background: $color-button;
+    border-radius: 30px;
+    border: 0;
+
+    padding: 11px 22px;
+    float: right;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 22px;
+    }
+
+    &::placeholder {
+      @include font(13px, 500, 150%);
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $color-button-hover;
+    }
+  }
+}

@@ -99,53 +99,6 @@
     }
   }
 
-  &__button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 34px;
-    height: 28px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: $color-background;
-    border-radius: 8px;
-    border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-
-    &:active {
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
-    }
-
-    &--prev {
-      left: -25px;
-    }
-    &--next {
-      right: -25px;
-    }
-
-    @media screen and (min-width: 1280px) {
-      width: 48px;
-      height: 40px;
-
-      &:hover &-image,
-      &:focus &-image {
-        fill: $color-button-border;
-      }
-      &--prev {
-        left: -40px;
-      }
-      &--next {
-        right: -40px;
-      }
-    }
-    &:active &-image {
-      fill: $color-text;
-    }
-  }
-
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     &__button-image {
       width: 11px;
@@ -159,4 +112,78 @@
       height: 29px;
     }
   }
+}
+
+// КОСТИЛЬ
+
+.swiper-button-prev {
+  position: absolute;
+  width: 34px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: $color-background;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+
+  left: -25px;
+  z-index: 11;
+
+  @media screen and (min-width: 1280px) {
+    width: 48px;
+    height: 40px;
+    left: -40px;
+
+    .slider__button-image:hover,
+    .slider__button-image:focus {
+      fill: $color-button-border;
+    }
+  }
+}
+.swiper-button-prev:active {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+}
+
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+
+  width: 34px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: $color-background;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+
+  right: -25px;
+  z-index: 11;
+
+  @media screen and (min-width: 1280px) {
+    width: 48px;
+    height: 40px;
+    right: -40px;
+
+    .slider__button-image:hover,
+    .slider__button-image:focus {
+      fill: $color-button-border;
+    }
+  }
+}
+
+.swiper-button-next:active {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none;
 }

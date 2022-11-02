@@ -1,31 +1,24 @@
 .footer {
-    min-height: 619px;
-    height: auto;
-    min-width: 320px;
-    width: 100%;
+    max-height: 619px;
+    max-width: 100%;
 
     @media screen and (min-width: $tablet) {
-        min-height: 506px;
-       height: auto;
-       min-width: 768px;
-       width: 100%;
+        max-height: 506px;
     }
 
     @media screen and (min-width: $desktop) {
-        min-height: 395px;
-        height: auto;
-        min-width: 1200px;
-        width: 100%;
+        max-height: 395px;
     }
 }
 
 .footer-container {
     padding-top: 60px;
     padding-bottom: 60px;
+    height: 619px;
     background-image: url(../images/mobile/footer-mobile-background.png);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: bottom;
+    background-size: 100% 100%;
 
     @include retina {
         background-image: url(../images/mobile/footer-mobile-background@2x.png);
@@ -35,6 +28,7 @@
     @media screen and (min-width: $tablet) {
         padding-top: 100px;
         padding-bottom: 100px;
+        height: 506px;
         background-image: url(../images/tablet/footer-background-tab.png);
 
         @include retina {
@@ -45,6 +39,7 @@
 
     @media screen and (min-width: $desktop) {
         padding-bottom: 100px;
+        height: 395px;
         background-image: url(../images/desktop/footer-background-desk.png);
         background-size: contain;
 
@@ -143,6 +138,8 @@
     padding-bottom: 12px;
     border: 0.854167px solid $color-modal;
     border-radius: 30px;
+
+    outline: none;
 
     @media screen and (min-width: $tablet) {
         width: 259px;
