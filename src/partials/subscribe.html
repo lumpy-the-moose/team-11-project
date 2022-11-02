@@ -1,6 +1,41 @@
-<section class="section">
-  <div class="container subscribe">
-    <div class="subscribe__wrap">
+<div class="container subscribe">
+  <div class="subscribe__wrap">
+    <div class="subscribe__box">
+      <picture class="subscribe__picture">
+        <source
+          srcset="
+            /src/images/subscribe/banana-desctop-608-1x.png  1x,
+            /src/images/subscribe/banana-desctop-1216-2x.png 2x,
+            /src/images/subscribe/banana-desctop-1824-3x.png 3x
+          "
+          media="(min-width: 1280px)"
+        />
+
+        <source
+          srcset="
+            /src/images/subscribe/banana-tab-281-1x.png 1x,
+            /src/images/subscribe/banana-tab-562-2x.png 2x,
+            /src/images/subscribe/banana-tab-843-3x.png 3x
+          "
+          media="(min-width: 768px)"
+        />
+
+        <source
+          srcset="
+            /src/images/subscribe/banana-mob-280-1x.png 1x,
+            /src/images/subscribe/banana-mob-560-2x.png 2x,
+            /src/images/subscribe/banana-mob-840-3x.png 3x
+          "
+          media="(min-width: 480px)"
+        />
+
+        <img
+          src="/src/images/subscribe/banana-mob-280-1x.png"
+          alt="banana"
+          class="subscribe__img-banana"
+        />
+      </picture>
+
       <h2 class="subscribe__tittle">Subscribe To Get Special Offers</h2>
       <p class="subscribe__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -9,31 +44,25 @@
     </div>
 
     <!-- Підписка -->
+
     <form action="#0" class="subscribe__form">
       <div class="subscribe__form-box">
-        <label>
-          <input
-            class="subscribe__mail-input"
-            type="email"
-            name="email"
-            placeholder="Enter your email"
-            required
-        /></label>
-        <div class="subscribe__input-requirements">
-          <svg
-            width="12"
-            height="12"
-            class="subscribe__button-image"
-            alt="prev"
-          >
-            <use href="./images/icons.svg#icon-error"></use>
-          </svg>
+        <div>
+          <label>
+            <input
+              class="subscribe__mail-input"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+          /></label>
         </div>
-      </div>
-
-      <div>
-        <button class="subscribe__mail-button" type="submit">Subscribe</button>
+        <div>
+          <button class="subscribe__mail-button" type="submit">
+            Subscribe
+          </button>
+        </div>
       </div>
     </form>
   </div>
-</section>
+</div>
