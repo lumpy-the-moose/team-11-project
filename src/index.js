@@ -8,8 +8,6 @@ Swiper.use([Navigation]);
 const swiper = new Swiper('.swiper', {
   loop: true,
 
-  loop: true,
-
   navigation: {
     nextEl: '.swiper-button-prev',
     prevEl: '.swiper-button-next',
