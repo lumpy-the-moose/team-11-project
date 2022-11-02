@@ -5,6 +5,7 @@
 @import './utils/common';
 @import './utils/placeholders';
 @import './components/buttons';
+@import './components/header';
 @import './components/hero';
 @import './components/offerings';
 @import './components/favorites';
@@ -12,4 +13,5 @@
 @import './components/subscribe';
 @import './components/footer';
 @import './components/modal';
-@import './components/header';
+
+@import '../../node_modules/swiper/swiper-bundle.css';
