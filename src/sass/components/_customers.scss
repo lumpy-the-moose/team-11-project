@@ -1,6 +1,19 @@
+// .section{
+//   padding: 60px 0 60px 0;
+//   @media screen and (min-width: 768px) {
+//     padding: 60px 0 120px 0;
+
+// }
+// @media screen and (min-width: 1280px) {
+//   padding: 100px 0 200px 0;
+
+// }
+// }
+
 .customer-section {
   background-repeat: no-repeat;
   background-size: cover;
+  
   background-position: center;
   background-image: url(../images/customers/rectanglemob1x.png);
 
@@ -83,16 +96,19 @@
 
   &__item {
     position: relative;
+
     @media screen and (max-width: 767px) {
       margin-bottom: 24px;
-      padding: 28px 8px 8px 8px;
+      padding: 51px 8px 8px 8px;
 
       background: $color-background;
       border-radius: 0px 30px 30px 30px;
     }
+
     @media screen and (min-width: 768px) {
       margin-right: 32px;
-      padding: 28px 12px 8px 12px;
+      padding: 56px 12px 12px 12px;
+
       background: $color-background;
       border-radius: 0px 30px 30px 30px;
 
@@ -102,9 +118,11 @@
       max-width: 336px;
       min-height: 244px;
     }
+
     @media screen and (min-width: 1280px) {
       margin-right: 139px;
-      padding: 28px 14px 8px 14px;
+      padding: 58px 14px 14px 14px;
+
       background: $color-background;
       border-radius: 0px 30px 30px 30px;
 
@@ -118,19 +136,15 @@
 }
 
 .customers__item-text {
-  padding: 28px 8px 40px 8px;
+  margin-bottom: 40px;
 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.2;
 
   @media screen and (min-width: 768px) {
-    padding: 28px 12px 40px 12px;
     font-size: 18px;
     line-height: 1.2;
-  }
-  @media screen and (min-width: 768px) {
-    padding: 28px 14px 40px 14px;
   }
 }
 
@@ -138,7 +152,6 @@
   display: flex;
   align-items: center;
   max-width: 160px;
-  height: 52px;
   border-right: 0.854167px solid $color-button-border;
 
   &__img {
