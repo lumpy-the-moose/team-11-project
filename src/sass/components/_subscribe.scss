@@ -1,10 +1,24 @@
 .subscribe {
   padding-bottom: 60px;
 
+  &__wrap {
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+      padding-bottom: 0px;
+      padding-bottom: 24px;
+    }
+  }
+  &__box {
+    @media screen and (min-width: 1280px) {
+      position: relative;
+    }
+  }
+
   &__picture {
     @media screen and (min-width: 768px) {
-      margin-left: auto;
       margin-right: 0;
+      margin-left: auto;
     }
 
     @media screen and (min-width: 1280px) {
@@ -28,30 +42,8 @@
     }
   }
 
-  &__form-box {
-    @media screen and (min-width: 768px) {
-      display: flex;
-    }
-  }
-  &__box {
-    @media screen and (min-width: 1280px) {
-      position: relative;
-    }
-  }
-
-  &__wrap {
-    margin-bottom: 40px;
-
-    @media screen and (min-width: 768px) {
-      padding-bottom: 0px;
-      padding-bottom: 24px;
-    }
-  }
-
   &__tittle {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 120%;
+    @include font(28px, 700, 120%);
 
     margin-bottom: 20px;
 
@@ -61,8 +53,7 @@
   }
 
   &__text {
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(14px, 400, 1.14);
 
     margin-bottom: 40px;
 
@@ -72,6 +63,12 @@
     }
     @media screen and (min-width: 1280px) {
       width: 656px;
+    }
+  }
+
+  &__form-box {
+    @media screen and (min-width: 768px) {
+      display: flex;
     }
   }
 
@@ -109,9 +106,7 @@
     }
 
     &::placeholder {
-      font-weight: 500;
-      font-size: 13px;
-      line-height: 150%;
+      @include font(13px, 500, 150%);
     }
 
     &:hover,
