@@ -19,7 +19,8 @@
   &__picture {
     position: absolute;
     top: -61px;
-    transform: translate(0, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     @media screen and (min-width: 768px) {
       position: absolute;
@@ -32,11 +33,7 @@
 
     @media screen and (min-width: 1280px) {
       position: absolute;
-<<<<<<< Updated upstream
       top: -46;
-=======
-      top: 164px;
->>>>>>> Stashed changes
       right: 0;
     }
   }
@@ -86,13 +83,16 @@
     }
   }
 
+  &__form-label {
+    margin-bottom: 20px;
+  }
+
   &__mail-input {
     width: 100%;
     font-size: 12px;
     line-height: 150%;
 
     padding: 12px 12px;
-    margin-bottom: 20px;
 
     color: #505050;
     background: $color-background;
@@ -110,6 +110,23 @@
     @media screen and (min-width: 1280px) {
       margin-bottom: 0;
     }
+  }
+
+  &__error {
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+
+    transition: opacity 250ms linear;
+  }
+  &__error-text {
+    @include font(10px, 400, 150%);
+    margin-left: 4px;
+    color: $color-error;
+  }
+  .subscribe__mail-input:focus + .subscribe__error {
+    opacity: 1;
   }
 
   &__mail-button {
