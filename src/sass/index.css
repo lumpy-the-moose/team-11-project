@@ -1632,9 +1632,6 @@ button {
   background-color: #ffffff;
   transition: opacity 250ms linear;
 }
-.form-modal__input:focus {
-  border: 1px solid #7eb101;
-}
 .form-modal__input::-moz-placeholder {
   font-size: 16px;
   font-weight: 400;
@@ -1677,7 +1674,7 @@ button {
   transition: opacity 250ms linear;
 }
 .attention__text {
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 500;
   line-height: 1.4;
   margin-left: 4px;
