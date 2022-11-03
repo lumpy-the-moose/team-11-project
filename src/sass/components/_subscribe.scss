@@ -2,6 +2,14 @@
   position: relative;
   padding-bottom: 60px;
 
+  &__wrap {
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+      padding-bottom: 0px;
+      padding-bottom: 24px;
+    }
+  }
   &__box {
     @media screen and (min-width: 1280px) {
       position: relative;
