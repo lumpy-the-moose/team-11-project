@@ -1,8 +1,8 @@
 .subscribe {
+  position: relative;
   padding-bottom: 60px;
 
   &__wrap {
-    position: relative;
     margin-bottom: 40px;
 
     @media screen and (min-width: 768px) {
@@ -18,11 +18,12 @@
 
   &__picture {
     position: absolute;
-    top: -68px;
+    top: -61px;
+    transform: translate(0, -50%);
 
     @media screen and (min-width: 768px) {
       position: absolute;
-      top: 0;
+      top: -91px;
       right: 0;
 
       margin-right: 0;
@@ -41,7 +42,6 @@
   }
 
   &__img-banana {
-    margin-bottom: 17px;
     margin-left: auto;
     margin-right: auto;
 
@@ -57,9 +57,11 @@
   &__tittle {
     @include font(28px, 700, 120%);
 
+    margin-top: 52px;
     margin-bottom: 20px;
 
     @media screen and (min-width: 768px) {
+      margin-top: 82px;
       font-size: 42px;
     }
   }
@@ -111,12 +113,14 @@
   }
 
   &__mail-button {
-    background: $color-button;
     border-radius: 30px;
     border: 0;
 
     padding: 11px 22px;
     float: right;
+
+    cursor: pointer;
+    background: $color-button;
 
     @media screen and (min-width: 768px) {
       margin-left: 22px;
