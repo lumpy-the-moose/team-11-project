@@ -2,6 +2,7 @@
   padding-bottom: 60px;
 
   &__wrap {
+    position: relative;
     margin-bottom: 40px;
 
     @media screen and (min-width: 768px) {
@@ -16,7 +17,14 @@
   }
 
   &__picture {
+    position: absolute;
+    top: -68px;
+
     @media screen and (min-width: 768px) {
+      position: absolute;
+      top: 0;
+      right: 0;
+
       margin-right: 0;
       margin-left: auto;
     }
@@ -94,6 +102,11 @@
 
     @media screen and (min-width: 768px) {
       width: 395px;
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 0;
     }
   }
 
