@@ -9,6 +9,7 @@
   background-image: url(../images/customers/customersmob1x.png);
   @include retina {
     background-image: url(../images/customers/customersmob2x.png);
+
   }
   @media (min-device-pixel-ratio: 3),
     (min-resolution: 288dpi),
