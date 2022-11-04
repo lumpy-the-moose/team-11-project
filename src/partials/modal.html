@@ -19,8 +19,10 @@
           id="name"
           placeholder="Your name"
           required
-          pattern="[A-z A-z]{1,25}"
-          class="form-modal__input"
+          pattern="[A-Za-z]{3,25}"
+          minlength="3"
+          maxlength="25"
+          class="form-modal__input input-user"
         />
         <div class="attention">
           <svg width="12" height="12" class="attention__svg">
@@ -43,7 +45,7 @@
           placeholder="+38(0_ _) _ _ _   _ _   _ _"
           pattern="^\+\d{2} \(\d{3}\) \d{3} \d{2} \d{2}$"
           required
-          class="form-modal__input"
+          class="form-modal__input input-tel"
         />
         <div class="attention">
           <svg width="12" height="12" class="attention__svg">
@@ -64,8 +66,9 @@
           name="email"
           id="mail"
           placeholder="example@gmail.com"
+          pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}"
           required
-          class="form-modal__input"
+          class="form-modal__input input-mail"
         />
         <div class="attention">
           <svg width="12" height="12" class="attention__svg">

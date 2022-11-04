@@ -1,6 +1,7 @@
 import './js/modal.js';
 import './js/mobile-menu.js';
 import './js/subscribe.js';
+import './js/modal-input';
 
 import Swiper, { Navigation } from 'swiper';
 Swiper.use([Navigation]);
