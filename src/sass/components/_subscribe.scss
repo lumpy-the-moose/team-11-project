@@ -1,7 +1,18 @@
 .subscribe {
+<<<<<<< HEAD
   position: relative;
+=======
+  padding-top: 52px;
+>>>>>>> 3d7323580cfec8894bb8633fb6285c3fe2b45c16
   padding-bottom: 60px;
+  @include tablet-min {
+    padding-top: 84px;
+  }
+  @include desktop-min {
+    padding-top: 30px;
+  }
 
+<<<<<<< HEAD
   &__wrap {
     margin-bottom: 40px;
 
@@ -47,37 +58,81 @@
       margin-right: 0;
     }
     @media screen and (min-width: 1280px) {
+=======
+  &__box {
+    position: relative;
+  }
+
+  &__picture {
+    position: absolute;
+    top: -95px;
+
+    @include tablet-min {
+      top: -156px;
+      right: 0;
+    }
+
+    @include desktop-min {
+      top: -46;
+      right: 0;
+    }
+  }
+
+  &__img-banana {
+    @include tablet-min {
+      margin-left: auto;
+      margin-right: 0;
+    }
+    @include desktop-min {
+>>>>>>> 3d7323580cfec8894bb8633fb6285c3fe2b45c16
       margin-bottom: 0;
     }
   }
 
   &__tittle {
     @include font(28px, 700, 120%);
+<<<<<<< HEAD
 
     margin-top: 52px;
     margin-bottom: 20px;
 
     @media screen and (min-width: 768px) {
       margin-top: 82px;
+=======
+
+    margin-bottom: 20px;
+
+    @include tablet-min {
+>>>>>>> 3d7323580cfec8894bb8633fb6285c3fe2b45c16
       font-size: 42px;
     }
   }
 
   &__text {
     @include font(14px, 400, 1.14);
+<<<<<<< HEAD
+
+    margin-bottom: 40px;
+=======
+>>>>>>> 3d7323580cfec8894bb8633fb6285c3fe2b45c16
 
     margin-bottom: 40px;
 
-    @media screen and (min-width: 768px) {
+    @include tablet-min {
       font-size: 16px;
       line-height: 150%;
     }
+<<<<<<< HEAD
     @media screen and (min-width: 1280px) {
+=======
+    @include desktop-min {
+>>>>>>> 3d7323580cfec8894bb8633fb6285c3fe2b45c16
       width: 656px;
     }
   }
 
   &__form-box {
+<<<<<<< HEAD
     @media screen and (min-width: 768px) {
       display: flex;
     }
@@ -85,6 +140,11 @@
 
   &__form-label {
     margin-bottom: 20px;
+=======
+    @include tablet-min {
+      display: flex;
+    }
+>>>>>>> 3d7323580cfec8894bb8633fb6285c3fe2b45c16
   }
 
   &__mail-input {
@@ -93,6 +153,7 @@
     line-height: 150%;
 
     padding: 12px 12px;
+    margin-bottom: 20px;
 
     color: #505050;
     background: $color-background;
@@ -102,16 +163,21 @@
 
     outline: none;
 
-    @media screen and (min-width: 768px) {
+    @include tablet-min {
       width: 395px;
       margin-bottom: 0;
     }
+<<<<<<< HEAD
 
     @media screen and (min-width: 1280px) {
+=======
+    @include desktop-min {
+>>>>>>> 3d7323580cfec8894bb8633fb6285c3fe2b45c16
       margin-bottom: 0;
     }
   }
 
+<<<<<<< HEAD
   &__error {
     opacity: 0;
     display: flex;
@@ -130,16 +196,24 @@
   }
 
   &__mail-button {
+=======
+  &__mail-button {
+    background: $color-button;
+>>>>>>> 3d7323580cfec8894bb8633fb6285c3fe2b45c16
     border-radius: 30px;
     border: 0;
 
     padding: 11px 22px;
     float: right;
 
+<<<<<<< HEAD
     cursor: pointer;
     background: $color-button;
 
     @media screen and (min-width: 768px) {
+=======
+    @include tablet-min {
+>>>>>>> 3d7323580cfec8894bb8633fb6285c3fe2b45c16
       margin-left: 22px;
     }
 
