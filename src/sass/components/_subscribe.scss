@@ -1,11 +1,16 @@
 .subscribe {
-  padding-top: 52px;
+  margin-top: -43px;
+  padding-top: 95px;
   padding-bottom: 60px;
+
   @include tablet-min {
-    padding-top: 84px;
-  }
-  @include tablet-min {
+    margin-top: -74px;
+    padding-top: 156px;
     padding-bottom: 100px;
+  }
+  @include desktop-min {
+    margin-top: -66px;
+    padding-top: 46px;
   }
 
   &__wrap {
@@ -108,19 +113,22 @@
       margin-bottom: 0;
     }
   }
-
+  .subsribe__button {
+    text-align: right;
+  }
   &__form-button {
+    width: 103px;
+    height: 42px;
+
     @include font(13px, 500, 150%);
 
-    color: $color-text;
     border-radius: 30px;
-    border: 0;
+    border: none;
 
-    padding: 11px 22px;
-    float: right;
+    color: $color-text;
+    background: $color-button;
 
     cursor: pointer;
-    background: $color-button;
 
     @include tablet-min {
       margin-left: 22px;
@@ -129,7 +137,7 @@
     &::placeholder {
       @include font(13px, 500, 150%);
     }
-
+    &:active,
     &:hover,
     &:focus {
       background-color: $color-button-hover;
