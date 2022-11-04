@@ -14,7 +14,13 @@
 
   &__picture {
     position: absolute;
-    top: -95px;
+    min-width: 280px;
+
+    @include mobile-max {
+      left: 50%;
+      top: -95px;
+      transform: translateX(-50%);
+    }
 
     @include tablet-min {
       top: -156px;
@@ -64,6 +70,7 @@
   &__form-box {
     @include tablet-min {
       display: flex;
+      align-items: center;
     }
   }
 
