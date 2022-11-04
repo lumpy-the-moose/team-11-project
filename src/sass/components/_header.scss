@@ -66,6 +66,7 @@ height: 72px;
         padding-left: 16px;
         padding-top: 16px;
         padding-bottom: 16px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         @media screen and (min-width:768px) {
                 padding: 0;
@@ -91,10 +92,12 @@ height: 72px;
         padding-left: 16px;
         padding-top: 16px;
         padding-bottom: 16px;
+        margin-left: 0;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         @media screen and (min-width:768px) {
             padding: 0;
-            margin-left:28px ;
+            
 }
 
             &:hover,
@@ -121,6 +124,7 @@ height: 72px;
             padding-left: 16px;
             padding-top: 16px;
             padding-bottom: 16px;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
             @media screen and (min-width:768px) {
                 padding: 0;
@@ -144,6 +148,16 @@ height: 72px;
         }
 
     .order-button {
+          cursor: pointer;
+          border-radius: 30px;
+          justify-content: center;
+          align-items: center;
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 1.5;
+          transition: background-color .25s cubic-bezier(.4,0,.2,1);
+          display: flex;
+}
         @media screen and (max-width:767px){
             display: none;
         }
@@ -151,10 +165,11 @@ height: 72px;
         @media screen and (min-width:768px){
             width: 98px;
             height: 32px;
-            background-color: $color-button;
+            background-color: #bbf330;
             border-radius: 30px;
             border: none;
             cursor: pointer;
+            
 
             &:hover,
             &:focus,
@@ -163,6 +178,8 @@ height: 72px;
             }
         }
     }
+  
+
 
     &__icon-burger {
         fill:$color-button-border;
