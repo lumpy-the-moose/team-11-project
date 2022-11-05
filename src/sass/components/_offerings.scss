@@ -10,26 +10,38 @@
     background-image: url(../images/mobile-offering/background-mobile2x.png);
   }
 
+  @media screen and (min-width: 480px) {
+    background-image: url(../images/mobile-offering/background-mobile480-1x.png);
+    background-size: auto;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/mobile-offering/background-mobile480-2x.png);
+    }
+  }
+
   @media screen and (min-width: 768px) {
     background-image: url(../images/tablet-offering/background-tablet1x.png);
-
+    padding: 150px 0 100px 0;
+    margin-top: -108px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/tablet-offering/background-tablet2x.png);
     }
-    padding: 150px 0 100px 0;
   }
 
   @media screen and (min-width: 1280px) {
     background-image: url(../images/desktop-offering/background-desktop1x.png);
+    padding: 177px 0 43px 0;
+    margin-top: -161px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/desktop-offering/background-desktop2x.png);
     }
-    padding: 177px 0 43px 0;
   }
 }
 
