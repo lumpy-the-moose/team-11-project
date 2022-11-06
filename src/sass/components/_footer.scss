@@ -145,6 +145,10 @@
     @include tablet-min {
         margin-bottom: 100px;
     }
+
+    @include desktop-min {
+        margin-bottom: 0px;
+    }
 }
 
 .footer-form__title {
@@ -219,10 +223,6 @@
     @media screen and (min-width: $tablet) {
         display: flex;
         justify-content: space-between;
-    }
-
-    @media screen and (min-width: $desktop) {
-        margin-bottom: 100px;
     }
 }
 
