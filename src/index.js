@@ -3,6 +3,7 @@ import './js/mobile-menu.js';
 import './js/subscribe.js';
 import './js/modal-input';
 import './js/btn-up';
+import './js/smooth-scroll';
 
 // swiperJS
 
