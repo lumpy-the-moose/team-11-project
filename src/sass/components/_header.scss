@@ -116,13 +116,6 @@
     background-color: $color-button;
   }
 
-  &__item--active {
-    @media screen and (min-width: 768px) {
-      color: $color-button;
-      text-decoration-line: underline;
-    }
-  }
-
   &__item--last {
     @media screen and (min-width: 768px) {
       margin-left: 28px;
