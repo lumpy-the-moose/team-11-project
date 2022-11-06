@@ -4,7 +4,6 @@ import './js/subscribe.js';
 import './js/modal-input';
 import './js/btn-up';
 
-
 // swiperJS
 
 import Swiper, { Navigation } from 'swiper';
@@ -18,20 +17,15 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-next',
   },
 
+  touchRatio: 1.5,
+  touchAngle: 45,
+  grabCursor: true,
+  speed: 900,
 
- touchRatio: 1.5,
- touchAngle: 45,
- grabCursor: true,
- speed: 900,
+  //  autoplay: {
+  //   delay: 1000,
+  //   stopOnLastSlide: true,
+  //   disableOnInteraction: false
 
-
-
-//  autoplay: {
-//   delay: 1000,
-//   stopOnLastSlide: true,
-//   disableOnInteraction: false
-
-//  },
-
-
+  //  },
 });
