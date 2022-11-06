@@ -3,7 +3,7 @@ import './js/mobile-menu.js';
 import './js/subscribe.js';
 import './js/modal-input';
 import './js/btn-up';
-
+import './js/smooth-scroll';
 
 // swiperJS
 
@@ -18,20 +18,15 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-next',
   },
 
+  touchRatio: 1.5,
+  touchAngle: 45,
+  grabCursor: true,
+  speed: 900,
 
- touchRatio: 1.5,
- touchAngle: 45,
- grabCursor: true,
- speed: 900,
+  //  autoplay: {
+  //   delay: 1000,
+  //   stopOnLastSlide: true,
+  //   disableOnInteraction: false
 
-
-
-//  autoplay: {
-//   delay: 1000,
-//   stopOnLastSlide: true,
-//   disableOnInteraction: false
-
-//  },
-
-
+  //  },
 });
