@@ -16,6 +16,11 @@
   line-height: $lh;
 }
 
+@mixin size($wd, $hg) {
+  width: $wd;
+  height: $hg;
+}
+
 @mixin mobile-min {
   @media screen and (min-width: 480px) {
     @content;

@@ -1,8 +1,12 @@
 .hero__section {
-  padding-bottom: 50px;
+  background-color: $color-background;
+  padding-bottom: 25px;
   @media screen and (min-width: 768px) {
     padding-top: 60px;
     padding-bottom: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 14px 0;
   }
 }
 .hero__container {
@@ -74,10 +78,11 @@
     bottom: 0;
     width: 320px;
     height: 320px;
-    border-radius: 269px;
+    border-radius: 50%;
     border: 14px solid $color-modal;
-
-    &:active {
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
       border-color: $color-button;
     }
   }
@@ -89,42 +94,43 @@
     top: 14px;
     right: 14px;
 
-    &:hover,
-    &:focus {
-      border-color: $color-button;
+
+  }
+
+  @include tablet-min {
+    &__button-image {
+
+    @include size(20px, 12px);  
+
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover, :focus {
+        fill: $color-button-border;
+      }
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @include desktop-min {
     &__button-image {
-      width: 11px;
-      height: 20px;
-    }
-  }
-
-  @media screen and (min-width: 1280px) {
-    &__button-image {
-      width: 16px;
-      height: 29px;
+      @include size(30px, 16px);  
     }
   }
 }
 
-// КОСТИЛЬ
+
+
+// Swiper
 
 .swiper {
   border-radius: 269px;
 }
 
 .swiper-button-prev {
+@include size(34px, 28px);
+
+@include flex-centered;
+  
   position: absolute;
-  width: 34px;
-  height: 28px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   background: $color-background;
   border-radius: 8px;
   border: none;
@@ -133,15 +139,12 @@
   left: -25px;
   z-index: 11;
 
+
   @media screen and (min-width: 1280px) {
-    width: 48px;
-    height: 40px;
+    @include size(48px, 40px);
     left: -40px;
 
-    .slider__button-image:hover,
-    .slider__button-image:focus {
-      fill: $color-button-border;
-    }
+
   }
 }
 .swiper-button-prev:active {
@@ -149,16 +152,11 @@
 }
 
 .swiper-button-next {
+@include size(34px, 28px);
+
+@include flex-centered;
+
   position: absolute;
-  top: 50%;
-
-  width: 34px;
-  height: 28px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   background: $color-background;
   border-radius: 8px;
   border: none;
@@ -167,22 +165,19 @@
   right: -25px;
   z-index: 11;
 
-  @media screen and (min-width: 1280px) {
-    width: 48px;
-    height: 40px;
+  @include desktop-min {
+    @include size(48px, 40px);
     right: -40px;
 
-    .slider__button-image:hover,
-    .slider__button-image:focus {
-      fill: $color-button-border;
-    }
   }
 }
 .swiper-button-next:active {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
 }
 
+
 .swiper-button-prev:after,
 .swiper-button-next:after {
   display: none;
 }
+
