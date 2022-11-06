@@ -1,50 +1,62 @@
-.customer-section {
+.customer-conteiner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  height: 769px;
+
   background-repeat: no-repeat;
+  background-position: bottom;
   background-size: cover;
-  background-position: center;
-  background-image: url(../images/customers/Rectanglemob1x.png);
+  background-image: url(../images/customers/customersmob1x.png);
+  @include retina {
+    background-image: url(../images/customers/customersmob2x.png);
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/customers/rectanglemob2x.png);
   }
-
   @media (min-device-pixel-ratio: 3),
     (min-resolution: 288dpi),
     (min-resolution: 3dppx) {
-    background-image: url(../images/customers/rectanglemob3x.png);
+    background-image: url(../images/customers/customersmob3x.png);
   }
 
-  @media screen and (min-width: 768px) {
-    background-image: url(../images/customers/Rectangletab1x.png);
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/customers/Rectangletab2x.png);
+  @media screen and (min-width: 480px) {
+    height: 769px;
+    background-image: url(../images/customers/customers4801x.png);
+    @include retina {
+      background-image: url(../images/customers/customers4802x.png);
     }
-
     @media (min-device-pixel-ratio: 3),
       (min-resolution: 288dpi),
       (min-resolution: 3dppx) {
-      background-image: url(../images/customers/rectangletab3x.png);
+      background-image: url(../images/customers/customers4803x.png);
     }
   }
 
-  @media screen and (min-width: 1280px) {
-    background-image: url(../images/customers/Rectangledesk1x.png);
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/customers/rectangledesk2x.png);
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+    padding-bottom: 120px;
+    height: 544px;
+    background-image: url(../images/customers/customerstab1x.png);
+    @include retina {
+      background-image: url(../images/customers/customerstab2x.png);
     }
-
     @media (min-device-pixel-ratio: 3),
       (min-resolution: 288dpi),
       (min-resolution: 3dppx) {
-      background-image: url(../images/customers/rectangledesk3x.png);
+      background-image: url(../images/customers/customerstab3x.png);
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 100px;
+    padding-bottom: 200px;
+    height: 647px;
+    background-image: url(../images/customers/customersdesk1x.png);
+    @include retina {
+      background-image: url(../images/customers/customersdesk2x.png);
+    }
+    @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../images/customers/customersdesk3x.png);
     }
   }
 }
@@ -53,46 +65,44 @@
   &__title {
     margin-bottom: 20px;
 
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.2;
+    @include font(28px, 700, 1.2);
 
-    @media screen and (min-width: 768px) {
-      font-size: 42px;
-      line-height: 1.2;
+    @media screen and (min-width: $tablet) {
+      @include font(42px, 700, 1.2);
     }
   }
 
   &__text {
     margin-bottom: 32px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.1;
 
-    @media screen and (min-width: 768px) {
-      font-size: 16px;
-      line-height: 1.2;
+    @include font(14px, 400, 1.1);
+
+    @media screen and (min-width: $tablet) {
+      @include font(16px, 700, 1.2);
     }
   }
 
   &__list {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       display: flex;
     }
   }
 
   &__item {
     position: relative;
-    @media screen and (max-width: 767px) {
+
+    @media screen and (max-width: $tablet) {
       margin-bottom: 24px;
-      padding: 28px 8px 8px 8px;
+      padding: 51px 8px 8px 8px;
 
       background: $color-background;
       border-radius: 0px 30px 30px 30px;
     }
-    @media screen and (min-width: 768px) {
+
+    @media screen and (min-width: $tablet) {
       margin-right: 32px;
-      padding: 28px 12px 8px 12px;
+      padding: 56px 12px 12px 12px;
+
       background: $color-background;
       border-radius: 0px 30px 30px 30px;
 
@@ -102,9 +112,11 @@
       max-width: 336px;
       min-height: 244px;
     }
-    @media screen and (min-width: 1280px) {
+
+    @media screen and (min-width: $desktop) {
       margin-right: 139px;
-      padding: 28px 14px 8px 14px;
+      padding: 58px 14px 14px 14px;
+
       background: $color-background;
       border-radius: 0px 30px 30px 30px;
 
@@ -118,19 +130,12 @@
 }
 
 .customers__item-text {
-  padding: 28px 8px 40px 8px;
+  margin-bottom: 40px;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.2;
+  @include font(16px, 700, 1.2);
 
   @media screen and (min-width: 768px) {
-    padding: 28px 12px 40px 12px;
-    font-size: 18px;
-    line-height: 1.2;
-  }
-  @media screen and (min-width: 768px) {
-    padding: 28px 14px 40px 14px;
+    @include font(18px, 700, 1.2);
   }
 }
 
@@ -138,7 +143,6 @@
   display: flex;
   align-items: center;
   max-width: 160px;
-  height: 52px;
   border-right: 0.854167px solid $color-button-border;
 
   &__img {
@@ -153,15 +157,11 @@
   &__title {
     margin-bottom: 2px;
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 150%;
+    @include font(14px, 500, 150%);
   }
 
   &__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
+    @include font(14px, 400, 150%);
   }
 }
 

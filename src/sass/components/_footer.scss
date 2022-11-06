@@ -130,6 +130,13 @@
 
 .site-nav__link {
     @include font (14px, 400, 1.14);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+        color: $color-button;
+        text-decoration: underline;
+    }
 }
 
 .footer-form__title {
@@ -164,17 +171,13 @@
 }
 
 .submit-btn {
-    text-align: right;
+    display: flex;
+    justify-content: right;
 }
 
 .form-btn {
-    @include font (13px, 500, 1.5);
     padding: 11px 22px;
-    width: 103px;
-    height: 42px;
-    background-color: $color-white;
-    border: 0.854167px solid $color-button-border;
-    border-radius: 30px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: $tablet) {
         margin-left: 12px;

@@ -1,43 +1,44 @@
 .subscribe {
+  padding-top: 52px;
   padding-bottom: 60px;
-
-  &__wrap {
-    margin-bottom: 40px;
-
-    @media screen and (min-width: 768px) {
-      padding-bottom: 0px;
-      padding-bottom: 24px;
-    }
+  @include tablet-min {
+    padding-top: 84px;
   }
+  @include desktop-min {
+    padding-top: 30px;
+  }
+
   &__box {
-    @media screen and (min-width: 1280px) {
-      position: relative;
-    }
+    position: relative;
   }
 
   &__picture {
-    @media screen and (min-width: 768px) {
-      margin-right: 0;
-      margin-left: auto;
+    position: absolute;
+    min-width: 280px;
+
+    @include mobile-max {
+      left: 50%;
+      top: -95px;
+      transform: translateX(-50%);
     }
 
-    @media screen and (min-width: 1280px) {
-      position: absolute;
+    @include tablet-min {
+      top: -156px;
+      right: 0;
+    }
+
+    @include desktop-min {
       top: -46;
       right: 0;
     }
   }
 
   &__img-banana {
-    margin-bottom: 17px;
-    margin-left: auto;
-    margin-right: auto;
-
-    @media screen and (min-width: 768px) {
+    @include tablet-min {
       margin-left: auto;
       margin-right: 0;
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop-min {
       margin-bottom: 0;
     }
   }
@@ -47,7 +48,7 @@
 
     margin-bottom: 20px;
 
-    @media screen and (min-width: 768px) {
+    @include tablet-min {
       font-size: 42px;
     }
   }
@@ -57,18 +58,19 @@
 
     margin-bottom: 40px;
 
-    @media screen and (min-width: 768px) {
+    @include tablet-min {
       font-size: 16px;
       line-height: 150%;
     }
-    @media screen and (min-width: 1280px) {
+    @include desktop-min {
       width: 656px;
     }
   }
 
   &__form-box {
-    @media screen and (min-width: 768px) {
+    @include tablet-min {
       display: flex;
+      align-items: center;
     }
   }
 
@@ -88,8 +90,12 @@
 
     outline: none;
 
-    @media screen and (min-width: 768px) {
+    @include tablet-min {
       width: 395px;
+      margin-bottom: 0;
+    }
+    @include desktop-min {
+      margin-bottom: 0;
     }
   }
 
@@ -101,7 +107,7 @@
     padding: 11px 22px;
     float: right;
 
-    @media screen and (min-width: 768px) {
+    @include tablet-min {
       margin-left: 22px;
     }
 
