@@ -15,9 +15,7 @@
     }
 
     @media screen and (min-width: 480px) {
-      //  height: 769px;
-
-      background-size: contain;
+   
       background-image: url(../images/customers/customers4801x.png);
       @include retina {
         background-image: url(../images/customers/customers4802x.png);
