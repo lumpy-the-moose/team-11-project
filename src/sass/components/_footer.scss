@@ -1,20 +1,22 @@
 .footer {
     max-height: 619px;
+    height: 619px;
     max-width: 100%;
 
     @include tablet-min {
         max-height: 506px;
+        height: 506px;
     }
 
     @include desktop-min {
         max-height: 395px;
+        height: 395px;
     }
 }
 
 .footer-container {
     padding-top: 60px;
     padding-bottom: 60px;
-    height: 619px;
     background-image: url(../images/mobile/footer-background-left.png), 
     url(../images/mobile/footer-background-right.png),
     url(../images/mobile/footer-background-bottom.png);
@@ -35,7 +37,6 @@
         @include tablet-min {
         padding-top: 100px;
         padding-bottom: 100px;
-        height: 506px;
         background-image: url(../images/tablet/footer-background-tab.png);
         background-position: bottom;
         background-size: cover;
@@ -48,7 +49,6 @@
 
     @include desktop-min {
         padding-bottom: 100px;
-        height: 395px;
         background-image: url(../images/desktop/footer-background-desk.png);
         background-size: contain;
 
@@ -68,10 +68,12 @@
 }
 
 .logo-site-nav {
+    margin-bottom: 40px;
     display: flex;
     justify-content: space-around;
 
     @include tablet-min {
+        margin-bottom: 0;
         justify-content: flex-start;
         align-items: center;
         margin-bottom: 40px;
@@ -99,10 +101,8 @@
 }
 
 .site-nav {
-    margin-bottom: 40px;
 
     @include tablet-min {
-        margin-bottom: 0;
         margin-left: 114px;
     }
 
@@ -139,6 +139,14 @@
     }
 }
 
+.footer-form {
+    margin-bottom: 60px;
+
+    @include tablet-min {
+        margin-bottom: 100px;
+    }
+}
+
 .footer-form__title {
     @include font (14px, 500, 1.5);
     margin-bottom: 12px;
@@ -165,22 +173,32 @@
 }
 
 .input-and-btn {
+    margin-bottom: 20px;
+
     @include tablet-min {
         display: flex;
+        margin-bottom: 12px;
+    }
+
+    @include desktop-min {
+        margin-bottom: 0;
     }
 }
 
 .submit-btn {
     display: flex;
     justify-content: right;
+
+    @include tablet-min {
+        margin-left: 12px;
+    }
 }
 
 .form-btn {
     padding: 11px 22px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @include tablet-min {
-        margin-left: 12px;
+    @include tablet-min { 
 
     &:hover,
     &:focus {
@@ -192,18 +210,8 @@
 .form-policy {
     @include font (10px, 400, 1.2);
 
-    margin-top: 20px;
-    margin-bottom: 60px;
-
     @media screen and (min-width: $tablet) {
         @include font (12px, 400, 1.16);
-
-        margin-top: 12px;
-        margin-bottom: 100px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        margin-bottom: 0;
     }
 }
 
