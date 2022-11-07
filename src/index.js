@@ -23,10 +23,9 @@ const swiper = new Swiper('.swiper', {
   grabCursor: true,
   speed: 900,
 
-  //  autoplay: {
-  //   delay: 1000,
-  //   stopOnLastSlide: true,
-  //   disableOnInteraction: false
-
-  //  },
+ touchRatio: 1.5,
+ touchAngle: 45,
+ grabCursor: true,
+ speed: 900,
+ },
 });
