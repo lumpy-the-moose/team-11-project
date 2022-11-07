@@ -22,10 +22,4 @@ const swiper = new Swiper('.swiper', {
   touchAngle: 45,
   grabCursor: true,
   speed: 900,
-
- touchRatio: 1.5,
- touchAngle: 45,
- grabCursor: true,
- speed: 900,
- },
 });
