@@ -1,12 +1,12 @@
 .subscribe {
   display: flex;
   flex-direction: column;
-  padding-bottom: 60px;
+  // padding-bottom: 60px;
   margin-top: -43px;
 
   @include tablet-min {
     align-items: flex-start;
-    padding-bottom: 100px;
+    // padding-bottom: 100px;
     margin-top: -74px;
   }
 
@@ -15,8 +15,16 @@
     justify-content: center;
     align-items: flex-end;
     height: 266px;
-    padding-bottom: 60px;
+    //padding-bottom: 60px;
     margin-top: -66px;
+  }
+
+  &__section {
+    padding-top: 0;
+
+    @include desktop-min {
+      padding-bottom: 64px;
+    }
   }
 
   &__picture {
@@ -45,19 +53,30 @@
     }
   }
 
-  &__text {
-    @include font(14px, 400, 1.14);
-
+  &__box {
     margin-bottom: 40px;
 
     @include tablet-min {
       margin-bottom: 24px;
+    }
+    // @include desktop-min {
+    //   margin-bottom: 24px;
+    // }
+  }
+
+  &__text {
+    @include font(14px, 400, 1.14);
+
+    // margin-bottom: 40px;
+
+    @include tablet-min {
+      // margin-bottom: 24px;
       font-size: 16px;
       line-height: 150%;
     }
     @include desktop-min {
       width: 608px;
-      margin-bottom: 24px;
+      //margin-bottom: 24px;
     }
   }
 
@@ -69,6 +88,15 @@
     @include tablet-min {
       display: flex;
       align-items: center;
+      margin-bottom: 0;
+    }
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 20px;
+    @include tablet-min {
+      margin-bottom: 0;
     }
   }
 
@@ -78,7 +106,7 @@
     line-height: 150%;
 
     padding: 12px 12px;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
 
     color: #505050;
     background: $color-background;
@@ -90,11 +118,11 @@
 
     @include tablet-min {
       width: 395px;
-      margin-bottom: 0;
+      // margin-bottom: 0;
     }
-    @include desktop-min {
-      margin-bottom: 0;
-    }
+    // @include desktop-min {
+    //   margin-bottom: 0;
+    // }
   }
 
   &__mail-button {
